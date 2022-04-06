@@ -3571,7 +3571,7 @@ blockquote {
   color: #fff;
 }
 
-.avax-field {
+.ftm-field {
   width: 510px;
   height: 40px;
   border-radius: 5px;
@@ -3793,7 +3793,7 @@ blockquote {
   text-align: left;
 }
 
-.wallet-avax {
+.wallet-ftm {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 24px;
@@ -3851,7 +3851,7 @@ blockquote {
   text-align: left;
 }
 
-.deposit-avax {
+.deposit-ftm {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 24px;
@@ -3859,7 +3859,7 @@ blockquote {
   text-align: left;
 }
 
-.reward-avax {
+.reward-ftm {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 24px;
