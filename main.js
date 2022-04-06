@@ -94,12 +94,12 @@ function refreshData(){
     var baseNum = 0;
     contractBalance(function(result){
         rawStr = numberWithCommas(Number(result).toFixed(3));
-        balanceElem.textContent = '' + stripDecimals(rawStr, 3) + ' AVAX';
+        balanceElem.textContent = '' + stripDecimals(rawStr, 3) + ' FTM';
     });
     
     web3.eth.getBalance(currentAddr).then(result => {
         rawStr = numberWithCommas(Number(web3.utils.fromWei(result)).toFixed(3));
-        document.getElementById('userTrx').textContent = '' + stripDecimals(rawStr, 3) + ' AVAX';
+        document.getElementById('userTrx').textContent = '' + stripDecimals(rawStr, 3) + ' FTM';
     }).catch((err) => {
         console.log(err)
     });
@@ -137,7 +137,7 @@ function refreshData(){
         var sellsforexampledoc=document.getElementById('sellsforexample')
         calculateEggBuySimple(web3.utils.toWei('0.1'),function(eggs){
             devFee(eggs,function(fee){
-                sellsforexampledoc.textContent='0.1 AVAX Hires ' + formatEggs(eggs-fee) + ' miners';
+                sellsforexampledoc.textContent='0.1 FTM Hires ' + formatEggs(eggs-fee) + ' miners';
             });
         });
     });
