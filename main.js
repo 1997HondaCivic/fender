@@ -1,28 +1,4 @@
-const chainId = 250// Fantom Mainnet
 
-if (window.ethereum.networkVersion !== chainId) {
-      try {
-        await window.ethereum.request({
-          method: 'wallet_switchEthereumChain',
-          params: [{ chainId: web3.utils.toHex(chainId) }],
-        });
-      } catch (err) {
-          // This error code indicates that the chain has not been added to MetaMask.
-        if (err.code === 4902) {
-          await window.ethereum.request({
-            method: 'wallet_addEthereumChain',
-            params: [
-              {
-                chainName: 'Fantom Mainnet',
-                chainId: web3.utils.toHex(chainId),
-                nativeCurrency: { name: 'FTM', decimals: 250, symbol: 'FTM' },
-                rpcUrls: ['https://rpc.ftm.tools/'],
-              },
-            ],
-          });
-        }
-      }
-    }
 var modal
 var modalContent
 var lastNumEggs=-1
