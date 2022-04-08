@@ -1,3 +1,51 @@
+.footer-link {
+  display: block;
+  margin-bottom: 10px;
+  color: #444;
+  text-decoration: none;
+}
+
+.image-4 {
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+  transition: 350ms; 
+}
+.image-4:hover
+{
+ transform: scale(1.05);
+}
+.image-5 {
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+  transition: 350ms; 
+}
+.image-5:hover
+{
+ transform: scale(1.05);
+}
+
+.image-6 {
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+  transition: 350ms; 
+}
+.image-6:hover
+{
+ transform: scale(1.05);
+}
+.image-7 {
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+  transition: 350ms; 
+}
+.image-7:hover
+{
+ transform: scale(1.05);
+}
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
@@ -3305,11 +3353,11 @@ blockquote {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 40px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  margin-bottom: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: left;
 }
 
@@ -3474,7 +3522,7 @@ blockquote {
   height: auto;
   max-width: 650px;
   margin-right: auto;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   margin-left: auto;
   padding: 0px 0px 24px;
   border: 0px solid #000;
