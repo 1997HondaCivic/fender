@@ -1,3 +1,11 @@
+#demo {
+  font-family: Satoshi, sans-serif;
+  font-size: 24px;
+  font-weight: bold; 
+  color: black;
+  text-align: center;
+  }
+
 .footer-link {
   display: block;
   margin-bottom: 10px;
