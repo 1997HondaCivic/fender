@@ -3666,13 +3666,13 @@ blockquote {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  background-color: #29a63e;
+  background-color: #13b5ec;
   font-family: Inter, sans-serif;
   color: #fff;
 }
 
 .navbar_button-copy.purple-copy:hover {
-  background-color: #9cdb54;
+  background-color: #8edffa;
   color: #fff;
 }
 
@@ -3707,7 +3707,7 @@ blockquote {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  background-color: #29a63e;
+  background-color: #13b5ec;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   font-family: Inter, sans-serif;
@@ -3718,7 +3718,7 @@ blockquote {
 }
 
 .hire-button:hover {
-  background-color: #9cdb54;
+  background-color: #8edffa;
   color: #fff;
 }
 
