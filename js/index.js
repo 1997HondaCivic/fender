@@ -93,7 +93,7 @@ async function checkForFantom() {
 
 async function runAPP(){
     let networkID = await web3.eth.net.getId()
-    if (networkID == 4002)
+    if (networkID == 250)
 		contract = await new web3.eth.Contract(ABI, CONTRACT_ADDRESS)
 		console.log(contract)
     } 
