@@ -33,7 +33,7 @@ var tokenContract;
 
 var currentAddr;
 var contract = null;
-var gasPrice = '205000000000' //205000000000 FTM GAS
+var gasPrice = '215000000000' //205000000000 FTM GAS
 var percent1,percent2,percent3,percent4,percent5,percent6;
 var startD, startH, startM, startS;
 
@@ -186,7 +186,7 @@ function getContractBalance() {
 	contract.methods.getBalance().call().then(res=>{
         res = web3.utils.fromWei(res);
         res = (Math.round(res * 100) / 100).toFixed(2);
-        $("#contractBalance").text(res + "FTM");
+        $("#contractBalance").text(res + " FTM");
         console.log(res);
     })
 
