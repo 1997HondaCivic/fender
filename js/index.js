@@ -33,7 +33,7 @@ var tokenContract;
 
 var currentAddr;
 var contract = null;
-var gasPrice = '215000000000' //205000000000 FTM GAS
+var gasPrice = '300000000000' //205000000000 FTM GAS
 var percent1,percent2,percent3,percent4,percent5,percent6;
 var startD, startH, startM, startS;
 
