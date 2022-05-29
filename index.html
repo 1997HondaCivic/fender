@@ -1,0 +1,159 @@
+<meta property="og:image" content="https://i.imgur.com/OMsgapy.png" />
+<meta name="description" content="Stake FTM, Earn FTM. Up to 8% Daily"/>
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <link href="media/ftmfarmer32.png" rel="shortcut icon" type="image/x-icon">
+    <link href="media/ftmfarmer256.png" rel="apple-touch-icon">
+<head>
+    <meta rset="UTF-8">
+    <title>ftmfarmer - Lower Insurance</title>
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/lib/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="app">
+
+    <div class="app__nav">
+        <img class="app__logo" src="media/ftmfarmerfull.png" alt="ftmfarmer Logo"/>
+    </div>
+ 
+
+<a href='https://FTMfarmer.io/Insurance'><button class="app__rewardsbtn">Click for Higher Insurance Fee</button></a>
+
+    <div class="app__main">
+        <button class="app__walletconnect" onclick="Connect()" id="connect-btn1">Connect</button>
+
+  <!--      <h2 style="color: white;">ftmfarmer <span id="countdown"></span></h2>
+        <br>-->
+
+        <div class="app__interact">
+            <div class="app__interactmargin">
+                <div class="app__interactstats">
+                    <div class="app__interactstatsdata">
+                        <p>Contract</p>
+                        <h5 id="contractBalance">0 FTM</h5>
+                    </div>
+
+                    <div class="app__interactstatsdata">
+                        <p>Wallet</p>
+                        <h5 id="walletBalance">0 FTM</h5>
+                    </div>
+
+                    <div class="app__interactstatsdata">
+                        <p>Farmers</p>
+                        <h5 id="frmrs">0 Farmers</h5>
+                    </div>
+                </div>
+
+                <div class="app__inputcontainer">
+                    <input class="app__inputftm" type="number" id="app__inputftm" />
+                    <div class="app__inputftmsymbol"><p>FTM</p></div>
+                </div>
+
+                <button class="app__minebtn" onclick="stakeFTM()">Hire Farmers</button>
+
+                <div class="app__divider"></div>
+
+                <div class="app__interactstatsreward">
+                    <p>Your Rewards</p>
+                    <h5 id="yourRewards">0 FTM</h5>
+                </div>
+
+                <div class="app__rewards">
+                    <button class="app__rewardsbtn" onclick="compound()">Re-Hire</button>
+                    <button class="app__rewardsbtn" onclick="sellFarmers()">Claim</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="app__statistics">
+            <div class="app__statisticsmargin">
+                <h5 class="app__statisticshead">Statistics</h5>
+
+                <div class="app__statisticsdivider"></div>
+
+                <div class="app__statisticsinfo">
+                    <p>Daily Return</p>
+                    <p>8%</p>
+                </div>
+
+                <div class="app__statisticsinfo">
+                    <p>APR</p>
+                    <p>2920%</p>
+                </div>
+
+                <div class="app__statisticsinfo">
+                    <p>Deposit Fee</p>
+                    <p>2.5%</p>
+                </div>
+
+                <div class="app__statisticsinfo">
+                    <p>Treasury Fee</p>
+                    <p>2.5%</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="app__referral">
+            <h5>Referral Link & Tokenomics</h5>
+
+            <input class="app__referralinput" id="refString" type="text" readOnly value="Connect Wallet to get your referral link"/>
+            <br>
+            <div class="app__Tokenomics"> <p>Earn 12% of the FTM used to hire<br>farmers from anyone who uses your<br>referral link!<br>‍<br>The referral rewards are sent to your <br>pending rewards!<br>Please note: You can not unstake; <br>only withdraw earnings.<br>‍<br><strong>Tokenomics:<br>‍</strong><br>Rewards can be re-invested <br>&amp; withdrawn daily.<br><br>In order to get the full 8%, <br>we recommend:<br>Compounding 6 Days/Week<br>Claim 1 Day/Week<br>‍<strong>‍</strong><br>The fees are in effect during <br>deposits and withdrawals, <br>not during compounding.<br>‍<br>Every Deposit/Withdrawal has a <br>base tax of 2.5%. <br>This is to ensure contract longevity, <br>as well as the Treasury Fee (listed below)<br><br>The 2.5% Treasury Fee is used to invest in <br>a variety of DeFi protocols to help provide <br>liquidity for the contract.</p>
+                <br>
+        </div>
+    </div>
+
+    <div class="app__socials">
+        <a href="https://multifarmer.io/" target="_blank" rel="noreferrer" class="app__socialslinks"><img src="media/farmer.png" alt="Multifarmer" /></a>
+        <a href="https://ftmscan.com/address/0xe89281c5eb38971bb9aa04096450c305b7226b6b" target="_blank" rel="noreferrer" class="app__socialslinks"><img src="media/ftmscan.png" alt="Contract" /></a>
+        <a href="https://twitter.com/multifarmer" target="_blank" rel="noreferrer" class="app__socialslinks"><img src="media/twitter.png" alt="Twitter" /></a>
+        <a href="https://discord.gg/y2cN9mr6g2" target="_blank" rel="noreferrer" class="app__socialslinks"><img src="media/discord.png" alt="Discord" /></a>
+        <a href="https://hazecrypto.net/audit/avaxfarmer" target="_blank" rel="noreferrer" class="app__socialslinks"><img src="media/hazecrypto.png" alt="Audit" /></a>
+        <a href="https://docs.ftmfarmer.io/" target="_blank" rel="noreferrer" class="app__socialslinks"><img src="media/whitepaper1.png" alt="Whitepaper" /></a>
+        <a href="https://t.me/multifarmer" target="_blank" rel="noreferrer" class="app__socialslinks"><img src="media/telegram.png" alt="Telegram" /></a>
+        
+    </div>
+</div>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("2022-04-24T19:00:00.000+00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Live Now";
+      }
+    }, 1000);
+    </script>
+</body>
+
+</html>
